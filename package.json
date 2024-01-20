@@ -2,14 +2,15 @@
   "name": "mille-isole",
   "private": true,
   "version": "1.0.0",
-  "homepage": "https://cheesemitch.github.io/mmille-isole/",
+  "homepage": "https://cheesemitch.github.io/mille-isole/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -f"
+    "deploy": "gh-pages -d dist",
+    "gh-pages-clean": "rimraf node_modules/gh-pages/.cache"
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.17",
