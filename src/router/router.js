@@ -5,6 +5,8 @@ import Contact from '../views/Contact.vue';
 import Imprint from '../views/Imprint.vue';
 import Privacy from '../views/Privacy.vue';
 
+const base = process.env.NODE_ENV === 'production' ? '/mille-isole/' : '/';
+
 const routes = [
   {
     path: '/',
@@ -30,7 +32,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(base),
   routes,
 });
 
