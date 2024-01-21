@@ -6,16 +6,16 @@
     <div class="mx-auto max-w-7xl overflow-hidden px-6 py-12 lg:px-8">
       <nav class="flex flex-wrap gap-x-6 justify-center" aria-label="Footer">
         <div class="">
-          <router-link to="/" active-class="font-extrabold" class="tracking-widest uppercase text-sm font-light leading-6 text-gray-900 hover:text-gray-900">Home</router-link>
+          <router-link to="/" active-class="font-bold" class="tracking-widest uppercase text-sm leading-6 text-gray-900 hover:text-gray-900">Home</router-link>
         </div>
         <div class="">
-          <router-link to="/contact" active-class="font-extrabold" class="tracking-widest uppercase text-sm font-light leading-6 text-gray-900 hover:text-gray-900">Contact</router-link>
+          <router-link to="/contact" active-class="font-bold" class="tracking-widest uppercase text-sm leading-6 text-gray-900 hover:text-gray-900">Contact</router-link>
         </div>
         <div class="">
-          <router-link to="/imprint" active-class="font-extrabold" class="tracking-widest uppercase text-sm font-light leading-6 text-gray-900 hover:text-gray-900">Imprint</router-link>
+          <router-link to="/imprint" active-class="font-bold" class="tracking-widest uppercase text-sm leading-6 text-gray-900 hover:text-gray-900">Imprint</router-link>
         </div>
         <div class="">
-          <router-link to="/privacy" active-class="font-extrabold" class="tracking-widest uppercase text-sm font-light leading-6 text-gray-900 hover:text-gray-900">Privacy</router-link>
+          <router-link to="/privacy" active-class="font-bold" class="tracking-widest uppercase text-sm leading-6 text-gray-900 hover:text-gray-900">Privacy</router-link>
         </div>
       </nav>
       <div class="hidden mt-10 justify-center space-x-10">
