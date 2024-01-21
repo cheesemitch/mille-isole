@@ -9,12 +9,13 @@
       </p>
       <dl class="mt-10 space-y-4 text-sm font-light leading-7 text-gray-900">
         <div class="flex gap-x-4 text-left">
-          <dt class="flex-none">
+          <dt class="relative h-7 w-7 flex-none">
             <span class="sr-only">Address</span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-7 w-6 text-gray-900">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-7 w-6 absolute inset-0 text-gray-900">
               <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
               <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
             </svg>
+            <img class="hidden hover:visible h-7 animate-ping" src="/images/Hajduk.png" alt="">
           </dt>
           <dd>Ul. Ljudevita Posavskog 17<br> HR-21000 Split</dd>
         </div>
