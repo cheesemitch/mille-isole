@@ -20,9 +20,8 @@ export default {
             </router-link>
             <!--logo-->
             <!--Navigation Links-->
-            <div class="absolute inset-0 flex flex-col items-center md:ml-4 md:pl-2 md:-mt-0.5 lg:mt-0 lg:ml-24 lg:pl-3 pt-8 justify-center">
-              <img class="h-20 w-auto" src="/images/logo_milleisole_2024.svg" alt="" />
-              <span class="text-2xl uppercase tracking-xxl">croatia</span>
+            <div class="absolute inset-0 -mx-4 flex flex-col items-center md:ml-1 md:-mt-0.5 lg:mt-0 lg:ml-14 lg:pl-6 pt-8 justify-center">
+              <img class="h-32 w-auto" src="/images/logo_milleisole_2024_CRO.svg" alt="" />
             </div>
             <!--Navigation Links-->
             <div class="mt-6 flow-root">

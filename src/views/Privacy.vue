@@ -31,23 +31,22 @@ const faqs = [
 ]
 </script>
 <template>
-  <div class="mx-auto max-w-7xl pt-8">
-    <div class="px-6 md:px-0 flex flex-col items-center text-center">         
-     
-      <div class="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
-      <div class="mx-auto max-w-2xl text-center">
-        <h2 class="hidden mt-12 text-xl tracking-xxl leading-7 text-gray-900 uppercase">Privacy Policy</h2>
-        <p class="mt-16 drop-shadow-xl text-md tracking-wide leading-6 text-gray-900">This <span class="font-bold">Privacy Policy</span> is designed to help you understand how we collect, use, disclose, and safeguard your personal information. By accessing or using our website, you consent to the practices described in this Privacy Policy.</p>
+  <div class="mx-auto max-w-7xl mt-40 flex">
+    <div class="px-6 md:px-0 flex flex-col items-center text-center">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <h2 class="hidden mt-12 text-xl tracking-xxl leading-7 text-gray-900 uppercase">Privacy Policy</h2>
+          <p class="drop-shadow-xl text-sm font-light tracking-wide leading-6 text-gray-900">This <span class="font-bold">Privacy Policy</span> is designed to help you understand how we collect, use, disclose, and safeguard your personal information. By accessing or using our website, you consent to the practices described in this Privacy Policy.</p>
+        </div>
+        <div class="mt-8 text-left">
+          <dl class="space-y-8 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-8 sm:space-y-0 lg:grid-cols-3 lg:gap-x-10">
+            <div v-for="faq in faqs" :key="faq.question">
+              <dt class="text-sm font-semibold leading-7 text-gray-900">{{ faq.question }}</dt>
+              <dd class="mt-2 drop-shadow-xl text-sm font-light leading-7 text-gray-800">{{ faq.answer }}</dd>
+            </div>
+          </dl>
+        </div>
       </div>
-      <div class="mt-12 text-left">
-        <dl class="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:grid-cols-3 lg:gap-x-10">
-          <div v-for="faq in faqs" :key="faq.question">
-            <dt class="text-base font-semibold leading-7 text-gray-900">{{ faq.question }}</dt>
-            <dd class="mt-2 drop-shadow-xl text-base leading-7 text-gray-800">{{ faq.answer }}</dd>
-          </div>
-        </dl>
-      </div>
-    </div>
     </div>
   </div>
 </template>

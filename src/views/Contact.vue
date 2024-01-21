@@ -1,14 +1,13 @@
 <script>
 </script>
 <template>
-  <div class="mx-auto max-w-2xl pt-8">
-    <div class="mt-40 md:mt-64 px-6 md:px-0 flex flex-col items-center text-center">         
-      <h2 class="mt-12 text-xl tracking-xxl leading-7 text-gray-900 uppercase">Get in touch</h2>
-      <p class="mt-6 drop-shadow-xl text-md tracking-wide leading-6 text-gray-900">
-        Feel free to reach out to us with any questions, feedback, or inquiries. Our team is here to assist you and provide the information you need.
-         We aim to respond promptly and provide the assistance you deserve.
+  <div class="mx-auto max-w-2xl mt-40 flex">
+    <div class="px-6 md:px-0 flex flex-col items-center text-center">         
+      <h2 class="text-xl tracking-xxl leading-7 text-gray-900 uppercase">Get in touch</h2>
+      <p class="mt-6 drop-shadow-xl text-sm font-light tracking-wide leading-6 text-gray-900">
+        Feel free to reach out to us with any questions, feedback, or inquiries.
       </p>
-      <dl class="mt-10 space-y-4 text-base leading-7 text-gray-900">
+      <dl class="mt-10 space-y-4 text-sm font-light leading-7 text-gray-900">
         <div class="flex gap-x-4 text-left">
           <dt class="flex-none">
             <span class="sr-only">Address</span>
