@@ -1,4 +1,11 @@
 <script>
+export default {
+  data () {
+    return {
+      showEasterEgg: false
+    }   
+  }
+}
 </script>
 <template>
   <div class="mx-auto max-w-2xl mt-40 flex">
@@ -9,15 +16,19 @@
       </p>
       <dl class="mt-10 space-y-4 text-sm font-light leading-7 text-gray-900">
         <div class="flex gap-x-4 text-left">
-          <dt class="relative h-7 w-7 flex-none">
+          <dt class="relative w-8 h-8 flex-none">
             <span class="sr-only">Address</span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-7 w-6 absolute inset-0 text-gray-900">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" 
+            :class="[showEasterEgg == false ? 'block' : 'hidden' , 'h-7 w-6 text-gray-900']">
               <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
               <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
             </svg>
-            <img class="hidden hover:visible h-7 animate-ping" src="/images/Hajduk.png" alt="">
+            <div class="relative -ml-0.5">
+              <img :class="[showEasterEgg == false ? 'hidden' : 'absolute inset-0 z-0', 'h-7 w-7 animate-ping']" src="/images/Hajduk.png" alt="">
+              <img :class="[showEasterEgg == false ? 'hidden' : 'absolute z-50 inset-0', '-ml-0.5 -mt-0.5 h-8 w-8']" src="/images/Hajduk.png" alt="">
+            </div>
           </dt>
-          <dd>Ul. Ljudevita Posavskog 17<br> HR-21000 Split</dd>
+          <dd class="-ml-1">Ul. Ljudevita Posavskog 17<br>HR-21000 <span @click="showEasterEgg = true" class="hover:animate-pulse hover:cursor-pointer">Split</span></dd>
         </div>
         <div class="hidden gap-x-4">
           <dt class="flex-none">
@@ -35,7 +46,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
             </svg>
           </dt>
-          <dd><a class="hover:text-gray-600" href="mailto:info@mille-isole.com">info@mille-isole.com</a></dd>
+          <dd><a class="pl-1 hover:text-gray-600" href="mailto:info@mille-isole.com">info@mille-isole.com</a></dd>
         </div>
       </dl>
     </div>
