@@ -2,7 +2,7 @@
   "name": "mille-isole",
   "private": true,
   "version": "1.0.0",
-  "homepage": "https://cheesemitch.github.io/mille-isole/",
+  "homepage": "www.mille-isole.com",
   "type": "module",
   "scripts": {
     "dev": "vite",
