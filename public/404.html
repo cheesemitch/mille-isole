@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mille Isole</title>
+    <script>
+      // If the URL doesn't contain a hash, add one with the full path
+      if (!location.hash.startsWith('#')) {
+        location.replace(location.pathname + location.search + '#' + location.pathname + location.search);
+      }
+    </script>    
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
